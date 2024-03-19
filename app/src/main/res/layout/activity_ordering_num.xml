@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAE5EF"
+    android:orientation="vertical"
+    tools:context=".OrderingNum">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Ordering Number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:text="Ascending Order" />
+
+    <EditText
+
+        android:id="@+id/asclist"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/randomnum"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/answerasc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:editable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Fill in the answer" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:text="Descending Order" />
+
+    <EditText
+        android:id="@+id/deslist"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/randomnum"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/answerdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:editable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Fill in the answer" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:background="#1E4C63"
+            android:gravity="center"
+            android:text="Sumbit"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:gravity="center"
+            android:text="" />
+
+        <Button
+            android:id="@+id/generateordernum"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:background="#C4FF36"
+            android:gravity="center"
+            android:text="Generate Numbers" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>

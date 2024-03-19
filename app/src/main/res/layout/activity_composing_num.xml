@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAE5EF"
+    android:orientation="vertical"
+    tools:context=".ComposingNum">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Composing Number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="5dp"
+        android:background="#FEFBC0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Question \t"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/q1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/randomnum2"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="\t\t=\t\t"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/q1a"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/randomnum"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="\t\t+\t\t\t"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/q1b"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/randomnum"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/q1ans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/generatenumbers"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="50sp"
+                android:layout_weight="1"
+                android:background="#BADC94"
+                android:gravity="center"
+                android:text="Generate Numbers"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnsub"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="50sp"
+                android:layout_weight="1"
+                android:background="#1E4C63"
+                android:gravity="center"
+                android:text="Sumbit"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/warningmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/display2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

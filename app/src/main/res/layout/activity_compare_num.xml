@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAE5EF"
+    tools:context=".CompareNum">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Compare Numbers"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:id="@+id/num1"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/randomnum"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="176dp"
+            android:layout_height="234dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnlarger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#479FD3"
+                android:gravity="center"
+                android:text="Larger Than"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnsmaller"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:background="#919FD3"
+                android:gravity="center"
+                android:text="Smaller Than"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <EditText
+
+            android:id="@+id/num2"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/randomnum"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/generatenum"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#729C44"
+        android:text="Generate Num"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
